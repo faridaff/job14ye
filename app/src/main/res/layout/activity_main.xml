@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/Button2"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:text="TO"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/Button1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Button1"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:text="TPFL"
+        android:textSize="25dp"
+        app:layout_constraintEnd_toStartOf="@+id/fragment_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Button3"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:text="PPLG"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Button2"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <Button
+        android:id="@+id/Button4"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:text="Busana"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Button2"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+    <Button
+        android:id="@+id/white_fragment"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:text="Kuliner"
+        android:textSize="25dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/Button2"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>
